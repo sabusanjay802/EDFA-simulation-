@@ -48,7 +48,7 @@ def edfa_model(z, P, params):
 
     return [dPp_dz, dPs_dz]
 
-P_p_in = 1000e-3  # 200 mW
+P_p_in = 1000e-3  # 1000 mW
 P_s_in = 1e-6    # 1 µW
 P0 = [P_p_in, P_s_in]
 z_span = [0, params['L']]
@@ -95,3 +95,4 @@ fig.suptitle('EDFA Signal and Pump Power Evolution', fontsize=16, fontweight='bo
 fig.legend(loc="upper right", bbox_to_anchor=(0.9, 0.85))
 fig.tight_layout(rect=[0, 0, 1, 0.96])
 plt.show()
+
