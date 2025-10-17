@@ -64,7 +64,7 @@ def simulate_edf_gain_vs_pump():
         gains_dB.append(gain_dB)
 
     # --- Plotting the results ---
-    plt.style.use('seaborn-v0_8-darkgrid')
+    plt.style.use('seaborn-v0_8-whitegrid')
     fig, ax = plt.subplots(figsize=(10, 6))
     
     ax.plot(pump_powers_mW, gains_dB, linewidth=2.5, color='royalblue', label='Simulated Gain (50% Feedback)')
@@ -80,3 +80,4 @@ def simulate_edf_gain_vs_pump():
 
 if __name__ == '__main__':
     simulate_edf_gain_vs_pump()
+
